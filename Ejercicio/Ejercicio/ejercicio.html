@@ -1,0 +1,79 @@
+<!Doctype>
+<html LANG="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <title>Navidades en Europa</title>
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+    </head>
+    <body>
+        <header>
+			<p class="text">¿Cómo disfrutan de la Navidad los europeos?</p>
+        </header>
+        <nav>
+			<ul>
+				<li><a href="#Galicia">Galicia</a>
+					<ul>
+						<li><a href="#ACoruña">A Coruña</a></li>
+						<li><a href="#Vigo">Vigo</a></li>
+					</ul>
+				</li>
+				<li><a href="#Noruega">Noruega</a></li>
+				<li><a href="#Francia">Francia</a></li>
+			</ul>
+        </nav>
+		<div class="container">
+			<section>
+				<article class="Nor">
+					<h1 class="encab">23 de diciembre, la "pequeña Nochebuena" en Noruega</h1>
+					<img src="Img/navidadenNoruega.jpg" alt="Noruega">
+					<p class="text">Muchas familias tienen tradiciones propias para esta noche, como decorar el árbol de navidad o hacer una casa de galletas de jengibre. 
+					Muchos comen pudín de arroz con azúcar, canela y mantequilla. 
+					En la masa se esconden almendras, y el que encuentre la almendra en su plato, ganará un cerdito de mazapán.</p>
+				</article>
+					
+				<article class="Fr">
+					<h1 class="encab">6 de diciembre, empieza la Navidad en Francia</h1>
+					<img  src="Img/NavidadFrancia.jpg" alt="Francia">
+					<p class=text">Como suele ser habitual en cualquier país, dependiendo de la zona en la que nos encontremos, la forma de celebrar esta fiesta puede variar algo. 
+					De hecho, en la zona del norte y del este del país, las fiestas se adelantan al 6 de diciembre. 
+					Se puede decir que es el día en el que se da el pistoletazo de salida a las fiestas navideñas. 
+					Ese día, se celebra el conocido con el nombre de Fête de Saint Nicolas. 
+					Es un día en el que se suelen hacer regalos y dulces a los más pequeños de la casa.</p>
+				</article>
+			</section>
+			<aside>
+				<p><b>Opina: Luces de Navidad en Vigo</b></p>
+				<img  src="Img/lucesnavidadvigo2019.jpg" alt="Vigo">
+				<form action="registro.php" method="post">
+					<fieldset class="formu">
+						<legend><b>Elige una opción</b></legend>
+							<select acceskey="valoración">
+							<option value="Valor_1">No están mal</option>
+							<option value="Valor_2">Me gustan</option>
+							<option value="Valor_3">No me gustan</option>
+							<option value="Valor_4">Me parecen excesivas</option>
+							</select>
+					</fieldset>
+					<fieldset class="formu">
+						<legend><b>Tus datos</b></legend>
+						Nombre 
+						<br>
+						<input type="text" name="firstname"  placeholder="Nombre">
+						<br>
+						email
+						<br>
+						<input type="email" name="emailaddres"  placeholder="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+						<br>
+						<br>
+						<input type="submit" name="Registrarse" value="Submit">
+						<input type="submit"  formaction="/encuesta.php"name="Enviar" value="Submit">
+					</fieldset>
+				</form>
+
+			</aside>
+		</div>
+        <footer>
+			<p>Bellón López,Noelia 10/12/2019</p>
+        </footer>
+    </body>
+</html>

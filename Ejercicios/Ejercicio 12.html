@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+	<head>
+		<meta charset="UTF-8">
+		<title> Horario laboral semanal</title>
+		<style>
+			table,td,th {
+				border:1px solid #000;
+			}
+			table{
+				width: 100%;
+			}
+			td,th {
+				padding:5px;
+			}
+			th{
+				text-align:center;
+			}
+			thead,tfoot {
+				background-color:yellow;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<table>
+			<caption>Horario laboral semanal</caption>
+				<colgroup>
+					<col style="background-color:orange;">
+					<col style="background-color:olive;">
+					<col style="background-color:olive;">
+					<col style="background-color:aqua;">
+					<col style="background-color:grey;">
+					<col style="background-color:grey;">
+				</colgroup>
+					<thead>
+						<tr>
+							<th colspan="6"> Días laborables de la semana</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th></th>
+							<th>Lunes</th>
+							<th>Martes</th>
+							<th>Miércoles</th>
+							<th>Jueves</th>
+							<th>Viernes</th>
+						</tr>
+							<th rowspan="4">Mes de octubre</th>
+							<td>8:30</td>
+							<td rowspan="3">9:00</td>
+							<td>8:45</td>
+							<td>10:00</td>
+							<td>9:45</td>
+						</tr>
+						<tr>
+							<td>9:00</td> 
+							<td rowspan="2">9:00</td>
+							<td>10:15</td>
+							<td>10:15</td>
+						</tr>
+						<tr>
+							<td>9:30</td>
+							<td colspan="2" rowspan="2"> 10:30</td>
+						</tr>
+						<tr>
+							<td>10:00</td>
+							<td>9:30</td>
+							<td>9:15</td>
+						</tr>
+						<tr>
+							<th></th>
+							<th>Lunes</th>
+							<th>Martes</th>
+							<th>Miércoles</th>
+							<th>Jueves</th>
+							<th>Viernes</th>
+						</tr>
+					</tbody>
+					<tfoot>
+						<th colspan="6">Días laborables de la semana</th>
+					</tfoot>
+		</table>
+	</body>
+</html>

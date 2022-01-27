@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Formularios</title>
+	</head>
+	</body>
+		<form action="procesar-datps.php" method="post">
+			<fieldset>
+				<legend>Datos personales </legend>
+				Usuario:
+				<br>
+				<input type="text"maxlength="15" size="20" accesskey="a">
+				<br>
+				<br>
+				Contraseña:
+				<br>
+				<input type="password" name="pwd" accesskey="w">
+				<br>
+				<br>
+				Servicio:
+				<select accesskey="q">
+					<option value="http">http</option>
+					<option value="ftp">ftp</option>
+					<option value="file" selected>file</option>
+				  </optgroup>
+				</select>
+				<br>
+				<br>
+				<input type= "button" value= Enviar accesskey="s">
+				<br>
+			</fieldset>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Formularios</title>
+		<style>
+		*{
+			
+		}
+			table{
+			margin: 0 auto;
+			}
+			.fieldset1{
+			height:300px;
+			width:400px
+			}
+			.fieldset2{
+			height:300px; 
+			width:400px; 
+			text-align:left;
+			padding-left:15px;
+			}
+			a{
+			margin-left: 1000px;
+			}
+		</style>
+	</head>
+	</body>
+		<table>
+			<form action="procesar-datps.php" method="post">
+				<td>
+					<fieldset class="fieldset1">
+						<legend>Datos cliente </legend>
+						Nombre:
+						<br>
+						<input type="text" name="firstname"  placeholder="María">
+						<br>
+						<br>
+						Apellidos:
+						<br>
+						<input type="text" name="lastname"  placeholder="García">
+						<br>
+						<br>
+						Email:
+						<br>
+						<input type="email" name="emailaddres"  placeholder="ejemplo@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required> 
+						<br>
+						<br>
+						Contraseña:
+						<br>
+						<input type="password" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+						<br>	
+					</fieldset>
+				</td>
+				<td>
+					<fieldset class="fieldset2">
+						<legend>Datos del Pedido </legend>
+						<select>
+							<optgroup label="Ropa">
+								<option value="jersey">Jersey</option>
+								<option value="chaqueta">Chaqueta </option>
+								<option value="falda" selected>Falda</option>
+							</optgroup>
+							<optgroup label="Calzado">
+								<option value="botas">Botas</option>
+								<option value="zapatillas">Zapatillas </option>
+								<option value="mocasines" selected>Mocasines</option>
+							</optgroup>
+							<optgroup label="Accesorios">
+								<option value="pendientes">Pendientes</option>
+								<option value="anillos">Anillos </option>
+								<option value="colgantes" selected>Colgantes</option>
+							</optgroup>
+						</select>
+						<br>
+						<br>
+						<textarea name="message" rows = "10" cols ="50"placeholder="Deje aquí su comentario."></textarea>
+						<br>
+						<br>
+						<input type="date" name="fechapedido">
+						<br>
+						<br>
+						<br>
+						
+					</fieldset>
+					</td>
+			</form>
+		</table>
+		<a href="form2.html">Siguiente</a>
+	</body>
+</html>
